@@ -5,262 +5,245 @@ date: 2026-11-24
 lang: zh
 ---
 
-> 从 40 条内容中筛选出 12 条重要资讯。
+> 从 53 条内容中筛选出 11 条重要资讯。
 
 ---
 
 **科技新闻**
-1. [英伟达董事会恢复黄仁勋 CEO 职务](#item-tech-news-1) ⭐️ 8.0/10
-2. [Ladybird 浏览器发布首个 Alpha，支持 macOS 与 Linux](#item-tech-news-2) ⭐️ 8.0/10
-3. [GLM-5.4 发布：首个循环 Transformer 瞄准通用编程](#item-tech-news-3) ⭐️ 8.0/10
-4. [Anthropic 关联仓库发布 VP ≠ VNP 论文，尚待验证](#item-tech-news-4) ⭐️ 8.0/10
-5. [开发者称 Apple 在九年后将其开源应用移出欧盟 App Store](#item-tech-news-5) ⭐️ 7.0/10
-6. [谷歌用模拟互联网测试 Chrome AI 代理](#item-tech-news-6) ⭐️ 7.0/10
-7. [Windows Server 2028 默认移除 WoW64，32 位应用需手动装回](#item-tech-news-7) ⭐️ 7.0/10
-8. [Codex2api 疑遭供应链投毒，3.1.10–3.1.12 需回滚](#item-tech-news-8) ⭐️ 7.0/10
-9. [Meta AI 负责人称超级智能将至并警告控制风险](#item-tech-news-9) ⭐️ 7.0/10
+1. [Ladybird 浏览器引擎发布首个 Alpha 版](#item-tech-news-1) ⭐️ 8.0/10
+2. [智谱发布 GLM-5.4：首个循环 Transformer 编码模型](#item-tech-news-2) ⭐️ 8.0/10
+3. [Anthropic 仓库发布 VP ≠ VNP 全域形式化声明](#item-tech-news-3) ⭐️ 8.0/10
+4. [ScreenConnect 严重漏洞遭利用，MSP 技术人员主机被静默入侵](#item-tech-news-4) ⭐️ 8.0/10
+5. [binary-parser 2.3.1 之前版本存在严重代码注入漏洞](#item-tech-news-5) ⭐️ 7.0/10
+6. [N-able 修复 Mail Assure 关键 SSRF 漏洞](#item-tech-news-6) ⭐️ 7.0/10
+7. [Idunno.AntiCsrf 反序列化漏洞遭利用，可未授权 RCE](#item-tech-news-7) ⭐️ 7.0/10
+8. [微软 Azure APIM 漏洞遭利用，客户 API 凭据被窃](#item-tech-news-8) ⭐️ 7.0/10
+9. [CISA 警告 Cisco Expressway 严重 RCE 漏洞已被在野利用](#item-tech-news-9) ⭐️ 7.0/10
+10. [Codex2api 疑遭供应链投毒，恶意版本移除鉴权](#item-tech-news-10) ⭐️ 7.0/10
 
 **科技博客**
-1. [DoorDash 调度重构：协调与计算分离](#item-tech-blog-1) ⭐️ 6.0/10
-2. [cuDSS 1.0：稀疏直接求解器的精度与内存改进](#item-tech-blog-2) ⭐️ 6.0/10
-3. [Sirius：为 DuckDB 带来 GPU 加速分析](#item-tech-blog-3) ⭐️ 4.0/10
+1. [.NET 加载回退绕过进程加固](#item-tech-blog-1) ⭐️ 9.0/10
 
 ---
 
 ## 科技新闻
 
 <a id="item-tech-news-1"></a>
-### [英伟达董事会恢复黄仁勋 CEO 职务](https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html) ⭐️ 8.0/10
+### [Ladybird 浏览器引擎发布首个 Alpha 版](https://ladybird.org/posts/alpha/) ⭐️ 8.0/10
 
-英伟达董事会宣布恢复黄仁勋（Jensen Huang）的首席执行官职务。公司声明称，董事会在决策过程中收到了美国联邦政府高层人士的意见，并据此表示黄仁勋复职不构成国家安全风险。所给材料主要为新闻标题、链接和评论，未包含文章全文，因此董事会此前为何让黄仁勋去职、以及政府以何种方式介入，都没有可核实的细节。
+Ladybird 项目发布了首个 Alpha 版，macOS 和 Linux 用户现在可以直接下载安装，无需自行编译这套核心组件基本自研的浏览器引擎。项目称其 HTML 解析、CSS、布局、JavaScript 和 WebAssembly 等核心组件基本自研，仅使用 HarfBuzz、Skia、ffmpeg 和 SQLite 等外部库。项目公布的 10 月数据显示，其更换 WebAssembly 引擎后 JetStream 3 成绩提升 7 倍，web-platform-tests 通过数增加 75,650 项至 2,184,722 项，超过 Safari 并接近 Firefox。Alpha 仍会崩溃、部分网站不可用；试用者报告 ffmpeg/Pyodide 等 WebAssembly 应用可运行，但依赖 Service Worker 的 Datasette Lite 因接口未实现而失败。
 
-hackernews · jaz · 11月23日 14:00 · [社区讨论](https://news.ycombinator.com/item?id=50611576)
+hackernews · janvdberg · 11月23日 16:13 · [社区讨论](https://news.ycombinator.com/item?id=50614249)
 
-**「此前的人事风波」** Horizon 11 月 12 日的日报曾记录，《华尔街日报》一则标题称英伟达正准备罢免黄仁勋，但当时只有标题和讨论、未获独立确认；11 月 14 日的日报则援引 CNBC 报道称黄仁勋已经辞职。此次董事会一致决定让黄仁勋复职，是这一人事风波的后续。
+**「背景」** Ladybird 源自 Andreas Kling 的 SerenityOS 项目，浏览器的大部分核心组件由项目自行实现，只借用 HarfBuzz（文字排版）、Skia（2D 图形）、ffmpeg 与 SQLite 等少数外部库。2026 年 2 月 23 日，Kling 曾撰文说明项目借助 Claude Code 与 Codex，在两周内把 LibJS 的部分代码从 C++ 移植为 2.5 万行 Rust；项目 10 月的月度通讯则记录了样式与布局移入独立线程、新的 JavaScript JIT，以及替换 Cranelift 的 WebAssembly 引擎（在 JetStream 3 WASM 基准上提升 7 倍），并称当月 web-platform-tests 通过数增加 75,650 项、超过 Safari。
 
-**「影响」** 声明把“收到美国政府高层意见”写进董事会决策说明，使这次公司治理变动与围绕对华芯片销售的制裁争议公开挂钩；对采购英伟达 AI 硬件的企业而言，随之而来的是政策与治理层面的不确定性，而所给材料未显示产品路线或供货安排发生变化。
+**「影响」** 对愿意尝鲜的 macOS/Linux 用户，Alpha 提供了可实际浏览并在浏览器内报告坏站的测试入口，但目前不适合替换日常浏览器：官方明确会有网站不兼容和崩溃，依赖 Service Worker 的站点还会遇到功能缺口，崩溃报告也需用户自行决定是否发送。
 
-**「社区讨论」** 多位评论者认为，声明中最关键的是“收到美国政府高层意见”这一句，而非复职本身；其中一人批评美国要求 ASML 和日本芯片厂商遵守对华制裁、却对英伟达网开一面，属于双重标准。另有评论援引特拉华州 Caremark 判例对董事会担责设定的高门槛，推测在司法部表示不起诉的情况下董事个人责任可被排除，并对董事会在不到两周内一致反转此前的决定表示意外。
+**「社区讨论」** 多位试用评论者称赞兼容性和速度：有人称测试的网站全部正确渲染，也有人表示 NoVNC 比 Firefox 更流畅，但同时指出页面滚动略有卡顿。另有评论希望 Ladybird 未来认真应对浏览器指纹，并有人怀念其早期大量自研基础库、而非改用 SQLite 和 Skia 等成熟组件的做法。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad">2026-11-12 — WSJ 称英伟达准备罢免黄仁勋</a></li>
-<li><a href="https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html">2026-11-14 — CNBC：卢特尼克因坎托与英伟达关系受审视</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Nvidia`, `#corporate governance`, `#US-China tech policy`, `#semiconductors`, `#AI hardware`
+**标签**: `#Ladybird`, `#web browsers`, `#browser engines`, `#open source`, `#alpha release`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [Ladybird 浏览器发布首个 Alpha，支持 macOS 与 Linux](https://ladybird.org/posts/alpha/) ⭐️ 8.0/10
+### [智谱发布 GLM-5.4：首个循环 Transformer 编码模型](https://z.ai/blog/glm-5.4) ⭐️ 8.0/10
 
-开源独立浏览器 Ladybird 发布首个 Alpha 版本，macOS 和 Linux 用户现在可以直接下载安装，无需自行编译。它的大部分核心组件——HTML 解析、CSS、布局、JavaScript 和 WebAssembly——均为自研，但仍使用 HarfBuzz、Skia、ffmpeg 和 SQLite 等外部组件。来源文章的试用记录显示，基于 WebAssembly 的 ffmpeg 工具和 Pyodide REPL 可以运行，但依赖 service worker 的 Datasette Lite 因缺少 navigator.serviceWorker.startMessages 而报错，相关 issue 已提交。官方将这一版本定位为 alpha，提醒部分网站会失效并可能崩溃；项目同时称 10 月的 web-platform-tests 通过数增加 75,650 项、达到约 218 万项，超过 Safari 但仍低于 Firefox，这一提升主要来自 AI 编码代理集中补齐功能。
+智谱（Z.ai）发布 GLM-5.4，这是其首个采用循环 Transformer 架构的模型，定位为编码模型。官方说明称，标准 Transformer 的每一层在一次前向传播中只运行一次，而循环 Transformer 让一组共享权重的层迭代多次、不断精炼隐藏状态，从而在不增加参数量的前提下加深网络。该模型目前不开放权重，也无法通过常规 API 套餐调用：开发者需订阅 Coding Plan，其密钥使用的 OpenAI 兼容 Responses API 端点（https://api.z.ai/api/v1）与常规套餐相同。除官方描述外，现有公开实测多为开发者手工尝试（如 Simon Willison 的 SVG 绘图对比，其结论是 5.4 与 5.3 水平相近），尚缺独立基准数据。
 
-hackernews · janvdberg · 11月23日 16:13 · [社区讨论](https://news.ycombinator.com/item?id=50614249)
+hackernews · foohis · 11月23日 10:06 · [社区讨论](https://news.ycombinator.com/item?id=50609685)
 
-**「背景」** Ladybird 源自更宏大的 SerenityOS 项目，自行实现 HTML 解析、CSS 引擎、布局、JavaScript 乃至 WebAssembly 等核心组件，只复用 HarfBuzz 文本排版、Skia 2D 图形、ffmpeg 视频和 SQLite 等少数外部库。2026 年 2 月 23 日 Andreas Kling 发文介绍借助 AI 编码工具把 LibJS 的部分代码从 C++ 迁移为约 2.5 万行 Rust；项目 10 月月度通讯则记录样式与布局移至独立线程、新的 JavaScript JIT、替换 Cranelift 的 WebAssembly 引擎在 JetStream 3 上取得 7 倍提升，以及在约 225 万个子项的 web-platform-tests 上新增 75,650 项通过、超过 Safari。
+**「背景」** GLM 系列此前已迭代到 5.1、5.2 和 5.3，均通过 Z.ai 的 API 提供；据同一来源的实测记录，5.1 与 5.2 生成的图像带有鲜明风格，与 OpenAI、Anthropic 模型差异明显，到 5.3 才转向更常见的样子。循环结构在同一周内第二次出现——Thinking Machines Lab 于 11 月 20 日发布的 Inkling 2 Mini 同样采用循环 Transformer，把模型中间层对每个 token 运行三次，用以在编码等推理密集型任务上以更少 token 得到答案。
 
-**「影响」** 对早期用户而言，Ladybird 已可用于检验常规网页兼容性，并能在浏览器内直接提交坏站或崩溃报告；但 service worker 相关功能仍是明确缺口，依赖这类能力的 Web 应用暂不能正常工作。
+**「使用与接入影响」** 对需要本地部署或独立评测的团队来说，GLM-5.4 目前不提供开放权重，且发布材料未给出第三方基准，只能通过 Z.ai 的托管服务试用。实际接入还需订阅 Coding Plan，常规 API 和 OpenRouter 暂不可用，现有 OpenAI 兼容客户端要确认套餐权限和模型名。
 
-**「社区讨论」** 多位评论者称实际渲染成功率高于预期：有人测试新闻网站和 ProxMox 的 NoVNC 均正常，甚至认为 NoVNC 比 Firefox 更流畅；也有人称 YouTube 和 Google Maps 可用但略有卡顿，页面滚动稍显不顺。另有评论者欢迎一个不与 Google 广告绑定的浏览器，并询问 alpha 阶段在登录、认证、支付和下载等场景应如何做好安全预防。
+**「社区讨论」** 有评论者赞赏智谱公开架构细节的做法，认为循环 Transformer 是顺理成章的方向，并把它形容为将标准 Transformer 那个“展开的 for 循环”重新卷起来；另一条评论从显存带宽角度解释其价值：推理时逐层把权重搬进芯片是主要瓶颈，循环结构让同一批权重在片上被多次复用。也有开发者抱怨部分中国模型即使在概念上很简单的问题上仍进行冗长的“马拉松式思考”，完成时间明显长于前沿模型，并怀疑这正是其基准分数接近的原因。
 
-**标签**: `#browser engine`, `#open source`, `#Ladybird`, `#alpha release`, `#software engineering`
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://wccftech.com/z-ai-debuts-glm-5-4-with-a-novel-looped-transformer-architecture-skipping-ai-benchmarks-entirely/">Z. ai Debuts GLM - 5 . 4 With a Novel Looped Transformer Architecture...</a></li>
+
+</ul>
+</details>
+
+**标签**: `#LLMs`, `#Looped Transformers`, `#Coding Models`, `#Zhipu AI`, `#Model Release`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [GLM-5.4 发布：首个循环 Transformer 瞄准通用编程](https://z.ai/blog/glm-5.4) ⭐️ 8.0/10
+### [Anthropic 仓库发布 VP ≠ VNP 全域形式化声明](https://github.com/anthropics/formal-math/tree/main/vp-vnp) ⭐️ 8.0/10
 
-智谱（Zhipu）发布 GLM-5.4，称这是其首个循环 Transformer（loop transformer），目标是面向通用编程；现有材料未给出参数规模、基准分数或独立复现结果，因此“首个”架构的说法与性能优势仍属厂商表述。评论者 Simon Willison 报告，该模型当时未通过 OpenRouter 或常规 Z.ai API 套餐提供，需改用 Coding Plan，且该套餐生成的 API 密钥与普通密钥用法相同。对准备接入的开发者来说，应先确认可用的套餐与端点，不能假定现有 GLM API 调用可直接切换到 5.4。
+Anthropic 的 formal-math 仓库发布了路径为 vp-vnp 的形式化条目，声称证明代数复杂性类 VP 与 VNP 不相等，且结论覆盖所有域。该结果面向代数复杂性研究者与形式化数学社区；它讨论的是 VP/VNP，而非直接解决 P vs NP，分析将其视为相对后者的部分进展。目前可核实的是仓库中的论文链接和形式化声明，这仍是待独立审查的声称，不能当作已获同行评审确认的定理。
 
-hackernews · foohis · 11月23日 10:06 · [社区讨论](https://news.ycombinator.com/item?id=50609685)
+hackernews · mikeryan52 · 11月23日 22:09 · [社区讨论](https://news.ycombinator.com/item?id=50620102)
 
-**「背景」** 循环 Transformer 针对的是标准 Transformer 的推理内存瓶颈：解码每个 token 时，每一层权重都要从 HBM 搬进芯片、只计算一次再搬出，因此内存带宽长期是推理的首要瓶颈；循环架构让同一组权重在一次前向中重复使用，以减少权重搬运（社区评论对原理的解释，以及 Z.ai 开发者文档对 GLM-5.4 为首款 Loop Transformer 架构旗舰模型的描述相互印证）。此前的 8 月 29 日日报曾报道智谱开源 GLM-5.3：它与 GLM-5.2 共用同一基础模型，提升全部来自后训练，主打智能体编程与网络防御，Terminal Bench 2.1 得 88.2、DeepSWE 得 66.9；如今的 GLM-5.4 则把架构改动本身作为卖点，并将编程场景扩展到视频制作、游戏开发、3D 建模和机械设计。
+**「背景」** VP 与 VNP 是代数复杂度理论中的两个类，常被看作 P 与 NP 的代数类比；VNP 的核心完全问题与永久式有关，而 VP 与行列式相关。两者是彼此独立的问题，目前没有已知方法能把这里声称的 VP ≠ VNP 转化为 P ≠ NP 的证明，因此该结果本身不能说明 P 与 NP 问题已接近解决。
 
-**「对开发者的影响」** 对想使用 GLM-5.4 的开发者而言，目前主要接入途径是 Z.ai 的 Coding Plan：据第三方报道，该档位提供视觉能力，每周额度为 GLM-5.3 的 1.5 倍，而 OpenRouter 和常规 API 的接入仍在跟进中。有评论者称，自己正是因为常规 API 套餐取不到该模型，才改用 Coding Plan；这说明在订阅前需要先确认所用渠道是否已开放 GLM-5.4。
+**「影响」** 对代数复杂性研究者来说，当前可用的产物是一个可被机器检查的论证入口；在引用前，关键工作是确认形式化陈述是否忠实对应原始数学命题，而不仅是检查证明脚本能否通过。
 
-**「社区讨论」** 有评论者赞赏智谱公开技术细节，并认为循环 Transformer 是自然方向：原始 Transformer 像展开的 for 循环，却把注意力和前馈知识分配给不同权重；另一位评论者则从 HBM 带宽瓶颈解释，循环结构可减少每生成一个 token 时反复搬运整层权重的开销。也有开发者抱怨部分中国模型在简单任务上仍进行冗长“马拉松式思考”，完成时间明显高于前沿模型；这属于个人使用体验，而非基准结论。
+**「社区讨论」** 评论者 isomorphic\_duck 认为这更像是朝 P vs NP 推进的部分结果，而非终局；fons 称其重跑了检查，并证明这些定理蕴含了对声明的“盲目重述”，还给出了独立检查仓库的链接。另有评论者担心此类 AI 辅助证明会压缩数学研究生可选的问题空间，这属于个人判断而非已证实影响。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="http://z.ai/">2026-08-29 — 智谱开源 GLM-5.3，专注智能体编程与网络防御</a></li>
-<li><a href="https://docs.z.ai/guides/llm/glm-5.4">GLM-5.4 - Overview - Z.AI DEVELOPER DOCUMENT</a></li>
-<li><a href="https://docs.bigmodel.cn/cn/guide/models/glm-5.4">GLM-5.4 - 智谱AI开放文档</a></li>
-<li><a href="https://explainx.ai/blog/glm-5-4-coding-plan-vision-50-percent-quota-boost-november-2026">GLM-5.4 Coding Plan: +50% Quota, Vision (Nov 2026) - explainx.ai</a></li>
-<li><a href="https://kingy.ai/blog/glm-5-4-launch/">GLM‑5.4 launch: How to use it, pricing and API status</a></li>
+<li><a href="https://www.alphaxiv.org/abs/2611.vp-vnp-arithmetic-lower-bounds">VP VNP Over Every Field | alphaXiv</a></li>
+<li><a href="https://drops.dagstuhl.de/storage/00lipics/lipics-vol360-fsttcs2025/html/LIPIcs.FSTTCS.2025.47/LIPIcs.FSTTCS.2025.47.html">The Algebraic Cost of a Boolean Sum</a></li>
 
 </ul>
 </details>
 
-**标签**: `#LLM architecture`, `#looped transformers`, `#GLM-5.4`, `#coding models`, `#model release`
+**标签**: `#algebraic complexity`, `#VP vs VNP`, `#formal verification`, `#Lean`, `#AI for mathematics`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [Anthropic 关联仓库发布 VP ≠ VNP 论文，尚待验证](https://github.com/anthropics/formal-math/tree/main/vp-vnp) ⭐️ 8.0/10
+### [ScreenConnect 严重漏洞遭利用，MSP 技术人员主机被静默入侵](https://thehackernews.com/2026/11/hackers-exploit-critical-screenconnect.html) ⭐️ 8.0/10
 
-与 Anthropic 关联的 formal-math 仓库托管了一篇论文，声称证明了在所有域上 VP ≠ VNP。该结论若成立，将分离代数复杂度类 VP 与 VNP；但目前只有仓库链接和 Hacker News 讨论，尚无同行评审或独立验证。评论者引用的论文原文还显示，作者未分析该结果与相对化（relativization）和代数化（algebrization）障碍的关系。对关注代数复杂度和形式化数学的读者而言，关键限制是：这是一项仓库中的论文主张，而非已发表或已复现的结果。
+攻击者正在实际利用已有补丁的 ConnectWise ScreenConnect 客户端高危漏洞 CVE-2026-84869（CVSS 9.9），目标包括 MSP 服务器和技术人员工作站。Huntress 称，恶意访客可向加入会话的技术人员主机推送文件，并让技术人员自己的客户端执行该文件，整个过程不出现提示；11 月 12 日观察到的一次攻击在约 9 秒内完成了批处理脚本执行、Telegram bot 回连、下载伪装成 WindowsUpdate.msi 的安装包，并启动指向攻击者中继的恶意 ScreenConnect 客户端。2026 年 10 月 20 日至 11 月 16 日，相关活动向 42 台 ScreenConnect 服务器发出至少 688,000 次访客“run file”请求，来自 29 个 IP；截至 11 月 13 日，至少 118 台自托管服务器和 109 家受 Huntress 保护的组织出现相关活动，共记录 2,408 个未授权会话。
 
-hackernews · mikeryan52 · 11月23日 22:09 · [社区讨论](https://news.ycombinator.com/item?id=50620102)
+rss · The Hacker News · 11月23日 12:41
 
-**「背景：VP 与 VNP 及证明屏障」** VP 与 VNP 是代数复杂性理论中对应 P 与 NP 的两个类别，VP ≠ VNP 是该领域长期未决的核心分离猜想。此类证明通常需要说明与相对化、代数化等已知屏障的关系；所引论文段落承认尚未分析这两点。仓库以 Lean 形式化代码发布，能机械检查证明步骤，但形式化是否忠实覆盖论文定义、以及证明本身是否经过同行评审，仍是独立问题。
+**「背景」** ScreenConnect 会话中，技师的主机客户端与访客机器可以交换文件，通常由技师决定传输什么、执行什么；CVE-2026-84869 正是利用这一信任边界，ConnectWise 后续发布了针对该文件传输漏洞的安全更新。Huntress 此前记录过 SCKit 蠕虫利用同一 CVE，在技师连接受感染设备时于其工作站执行代码；不过本次攻击链与那波活动不同，采用的是恶意访客推送批处理脚本并注册 rogue 客户端。
 
-**「引用前需独立复核」** 对复杂性和形式化数学研究者而言，当前更稳妥的做法是把这当作待复核的论文主张，而不是已确立的 VP ≠ VNP 结论：论文自述尚未分析该结果与相对化、代数化（algebrization）等已知障碍的关系，且尚未经过同行评审。若要在教学、引用或后续证明中依赖它，应先核对仓库中的形式化内容与障碍论证。
+**「实际影响」** 对 MSP 而言，受影响的不只是一台员工电脑：技术人员工作站通常保存 RMM 控制台、已保存凭据和通往所有客户环境的访问权限，攻击者一旦通过指向自己中继的 ScreenConnect 客户端取得远程访问，就可能利用这些权限进入客户环境。Huntress 建议立即将技术人员主机的 ScreenConnect 客户端升级到 26.6.5 或更高版本，排查暴露迹象并隔离受影响工作站；若无法立即修补，应从角色和会话组中移除 TransferFiles 权限，并轮换该工作站可访问的所有凭据。
 
-**「社区讨论」** 有评论者推测，这像是 Anthropic 在 P vs NP 方向投入的阶段性成果，也有人担忧 AI 会让数学研究生可选的题目迅速被解决；这些都属于个人判断，并非对证明的验证。更具体的技术讨论则引用论文自述，指出其未分析相对化与代数化障碍，另有评论者提供了无需本地构建即可浏览 Lean 源码的工具。
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://thehackernews.com/2026/11/connectwise-warns-screenconnect-attacks.html">ConnectWise Warns ScreenConnect Attacks Continue as SCKit...</a></li>
+<li><a href="https://www.huntress.com/blog/sckit-worm-rogue-screenconnect">SCKit Worm Installs Rogue ScreenConnect Clients and... | Huntress</a></li>
 
-**标签**: `#algebraic-complexity`, `#complexity-theory`, `#formal-methods`, `#lean`, `#ai-for-math`
+</ul>
+</details>
+
+**标签**: `#ConnectWise ScreenConnect`, `#CVE-2026-84869`, `#MSP security`, `#active exploitation`, `#security vulnerability`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [开发者称 Apple 在九年后将其开源应用移出欧盟 App Store](https://github.com/glushchenko/fsnotes/discussions/2056) ⭐️ 7.0/10
+### [binary-parser 2.3.1 之前版本存在严重代码注入漏洞](https://thehackernews.com/2026/11/critical-binary-parser-flaw-enables.html) ⭐️ 7.0/10
 
-开发者 Oleksandr Hlushchenko 在 GitHub 讨论区表示，其开源应用 FSNotes 在欧盟区 App Store 上架九年后被下架，该讨论随后在 Hacker News 引发关注。评论者 ggreer 指出，该应用仍在美国和英国区商店可见，其引用的荷兰区商店缓存页面显示该开发者「未将此应用标识为商家」，指向欧盟《数字服务法》（DSA）的商家身份（trader status）核验要求；不过 Apple 并未公开说明下架理由，因此具体原因仍属推断。开发者方面的说法是已联系 Apple 但未得到有效回应。
+项目维护者披露，binary-parser 2.3.1 之前的版本存在代码注入漏洞 CVE-2026-134814（CVSS 9.2/8.1）：攻击者若能控制解析器定义，可通过 Context.generateOption\(\) 未充分校验的 length、lengthInBytes、key、tag、offset 或 namely\(\) 别名等字符串选项注入 JavaScript，并在解析器编译时于 Node.js 进程中执行。2.3.1 将这些选项按标识符路径校验，拒绝“len - 1”这类表达式并要求改用函数。维护者强调，使用可信解析器定义解析不可信二进制数据不受影响；该漏洞也被视为对 2026 年 1 月修复的 CVE-2026-1245 的不完整修复。
 
-hackernews · fluder · 11月23日 18:48 · [社区讨论](https://news.ycombinator.com/item?id=50616933)
+rss · The Hacker News · 11月23日 13:22
 
-**「背景：DSA 商家身份核验要求」** 欧盟《数字服务法》第 30、31 条要求苹果对在欧盟 App Store 分发应用的商家（trader）核验并公开展示其联系信息，包括地址、电话和邮箱。苹果此前通知开发者，自 2025 年 2 月 17 日起，未提供商家身份的应用将从欧盟 App Store 下架，直至身份信息提交并在必要时完成核验。该身份并非一次填写后永久有效：开发者需在 App Store Connect 中维护这些信息，状态可能因地址变更等原因失效。
+**「背景」** binary-parser 是 Node.js 中按解析器定义解析二进制数据的库。此次问题并非该库首次出现代码注入：2026 年 1 月修复的 CVE-2026-1245（CVSS 6.5）同样源于字段名和编码参数校验不足；本次 CVE-2026-134814 被描述为对该修复的不完整覆盖。
 
-**「对开发者的影响」** 对在欧盟区分发应用的独立开发者而言，这一案例的警示是：DSA 商家身份核验不是一次性动作，认证可能因地址变更等原因失效，一旦失效便可能触发下架，而恢复只能走 App Store 审核通道。评论者 dmix 提到，其新应用在近期欧盟规则调整后花了约一个月才通过 DSA 审核，因此开发者需要及时在 App Store Connect 中维护并复核商家信息，并为审核排队预留时间。
+**「影响」** 受影响用户应升级到 2.3.1，并检查是否把外部输入拼入解析器定义中的上述选项；原先依赖“len - 1”等字符串表达式的定义需改为函数，否则升级后会被拒绝。若解析器定义完全可信，仅解析不可信二进制数据无需按此漏洞处置。
 
-**「社区讨论」** ggreer 认为下架更可能是 DSA 商家身份问题而非开源身份，并强调认证状态会因地址变更等原因失效；thih9 则反驳说，该应用是付费应用、开发者本就以商家身份申报，遵守法规与是否开源无关，且核验不应拖到九年后才做。dmix 报告称，近期欧盟 DSA 审核排队约需一个月，并认为审核团队正承受大量 AI 生成应用提交带来的负载压力。
-
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://developer.apple.com/help/app-store-connect/manage-compliance-information/manage-european-union-digital-services-act-trader-requirements/">Manage European Union Digital Services Act trader requirements</a></li>
-<li><a href="https://developer.apple.com/news/?id=einwn76m">Apps without trader status will be removed from the App Store ...</a></li>
-<li><a href="https://median.co/blog/how-to-update-apple-trader-status-app-store-connect">How to update your Apple trader status from App Store Connect</a></li>
-
-</ul>
-</details>
-
-**标签**: `#EU DSA`, `#Apple App Store`, `#app distribution`, `#open source`, `#developer compliance`
+**标签**: `#security vulnerability`, `#Node.js`, `#binary-parser`, `#CVE`, `#code injection`
 
 ---
 
 <a id="item-tech-news-6"></a>
-### [谷歌用模拟互联网测试 Chrome AI 代理](https://www.landian.news/archives/128701.html) ⭐️ 7.0/10
+### [N-able 修复 Mail Assure 关键 SSRF 漏洞](https://thehackernews.com/2026/11/n-able-discloses-critical-mail-assure.html) ⭐️ 7.0/10
 
-据蓝点网报道，谷歌为 Chrome 的 AI 代理搭建了一个名为 Mirror Dimension 的模拟互联网，用于在隔离环境中测试其打开网站、搜索浏览、登录、加购和完成任务等操作。该环境包含数千个模拟网站，每名工程师单独隔离测试，每天运行超过 1000 个测试案例，重点防御恶意网页发起的提示词注入攻击。上述细节来自二手报道，源内容未说明测试结果、上线时间，也未说明这些防护是否已进入 Chrome。
+N-able 在调查 Mail Assure 与 SpamExperts Hosted Cloud 入侵事件时发现并修复了一个关键 SSRF 漏洞，编号为 CVE-2026-134624，CVSS 4.0 评分为 9.3。该漏洞位于 LDAP 同步的 relay 连接检查中，拥有高级 API 权限的已认证用户可让服务器连接任意内部主机和端口、探测可达性并向内部服务发送构造数据；低于 20261121.1943 的构建受影响，该构建为修复版本。N-able 于上周六晚间恢复仪表盘和 API，结束了上周一开始的中断，邮件投递和垃圾邮件过滤在此期间保持运行。公司称未发现客户数据（包括租户邮箱）被泄露的证据，也未确认该漏洞就是攻击者的入口，调查仍在进行。
 
-telegram · zaihuapd · 11月23日 01:30
+rss · The Hacker News · 11月23日 12:28
 
-**「背景」** 浏览器 AI 代理与普通聊天机器人不同：它要在 Chrome 中像用户一样打开网页、搜索、登录和加购，因此网页里隐藏的指令可能被代理误当成任务执行。这类攻击就是提示词注入。Wired 的报道也提到，谷歌会让这些代理在浏览过程中遭遇隐藏的提示词注入攻击，以检验其防御能力。
+**「背景」** 服务器端请求伪造（SSRF）是指服务端被诱导向攻击者指定的地址发起请求，从而可被用来探测或访问内网服务。此前在 11 月 9 日，N-able 还曾因研究者公布 33 个未修复漏洞，将其托管 N-central 远程监控平台下线；公司称本次 Mail Assure 入侵与那起事件无关。
 
-**「影响」** 报道列出的测试操作包含登录和加购等带副作用的动作，说明评估浏览器代理不能只看它能否回答问题，还要看恶意网页能否诱导它执行未授权操作。由于源内容没有说明 Mirror Dimension 是否对外开放，也没有说明相关防护是否已随 Chrome 发布，开发者目前无法据此判断实际用户是否已获得同等保护。
+**「影响」** 对 Hosted Cloud 客户而言，N-able 已轮换内部凭据、撤销现有 API 令牌、使 OAuth 令牌失效并重置本地用户密码，因此依赖这些令牌的脚本和集成需要改用新凭据重新连接；各合作伙伴已收到针对其环境的邮件指引。Hosted Cloud 平台已由厂商修补，用户无需安装；SpamExperts Local Cloud 运行在客户硬件上，运营方应确认服务器已升级到 20261121.1943 构建。
 
-<details><summary>参考链接</summary>
-<ul>
-<li><a href="https://www.wired.com/story/google-built-a-giant-mirror-dimension-internet-to-test-its-chrome-ai-agents/">Google Built a Giant ‘ Mirror Dimension ’ Internet to Test Its Chrome ...</a></li>
-
-</ul>
-</details>
-
-**标签**: `#Chrome AI`, `#browser agents`, `#prompt injection`, `#AI security testing`, `#simulated internet`
+**标签**: `#SSRF`, `#vulnerability disclosure`, `#N-able Mail Assure`, `#managed service providers`, `#security breach`
 
 ---
 
 <a id="item-tech-news-7"></a>
-### [Windows Server 2028 默认移除 WoW64，32 位应用需手动装回](https://www.windowslatest.com/2026/11/23/32-bit-apps-days-are-numbered-as-microsoft-strips-support-bit-by-bit-starting-with-windows-server-2028-but-windows-11-is-safe-for-now/) ⭐️ 7.0/10
+### [Idunno.AntiCsrf 反序列化漏洞遭利用，可未授权 RCE](https://thehackernews.com/2026/11/hackers-exploit-critical-aspnet-anti.html) ⭐️ 7.0/10
 
-微软在 Ignite 2026 上表示，Windows Server 2028 将默认不再包含 WoW64 兼容子系统，因此系统安装完成后无法直接运行 32 位应用。该版本计划于 2027 年秋季与 Windows 11 27H2 一同发布。需要运行 32 位软件时，可通过“按需功能”（FoD）重新安装 WoW64，在 Server Core 上一般使用 PowerShell 或 DISM 添加。微软称此举旨在减少攻击面、阻止 32 位恶意软件；Windows 11 目前仍保留 WoW64，微软未公布移除计划。上述内容来自 Windows Latest 的报道，具体支持范围以微软后续文档为准。
+研究人员披露，已停止维护的 ASP.NET 反 CSRF 库 Idunno.AntiCsrf 存在不安全反序列化漏洞 CVE-2026-131914，CVSS 评分为 9.3，影响 0.9.1.0 和 0.9.1 Beta 版本。Google 旗下 Mandiant 表示已观察到该漏洞在野利用：攻击者只需发送一个未经认证的 HTTP POST，在 CSRF Cookie 中填入任意非空值，并在 CSRF 表单字段中放入 Base64 编码的 .NET ObjectStateFormatter gadget chain，就可在 IIS 工作进程 w3wp.exe 的上下文中执行任意代码。该库自 2008 年 12 月起未再更新，目前没有官方补丁，Google 建议用户停用并迁移到受支持的反 CSRF 方案。
 
-telegram · zaihuapd · 11月23日 03:03
+rss · The Hacker News · 11月23日 09:11
 
-**「背景」** WoW64（Windows 32-bit on Windows 64-bit）是 64 位 Windows 中负责运行 32 位应用的兼容子系统，长期作为系统默认组件随附，因此企业无需额外配置即可沿用旧版 32 位软件。此次变化的核心在于它从“默认内置”改为“按需功能”：同一套兼容能力仍在，但部署方式由开箱即用变成需要管理员主动添加。
+**「背景」** 双提交 Cookie 是一种常见的 CSRF 防护模式，服务端会比较 Cookie 与表单提交中的令牌；Idunno.AntiCsrf 将这一模式实现为 ASP.NET WebForms 的 IHttpModule。其关键缺陷在于使用无密钥的 System.Web.UI.ObjectStateFormatter 反序列化表单令牌，且没有 MAC 或签名校验，使攻击者可控的序列化数据成为代码执行入口。
 
-**「影响」** 仍依赖 32 位应用的企业需要在制作 Windows Server 2028 镜像时预先加入 WoW64 按需功能，否则部署完成后应用无法启动；Server Core 没有图形界面，只能通过 PowerShell 或 DISM 操作，因此相关步骤应提前写入标准化部署脚本。
+**「影响与处置」** 仍在使用该库的组织没有补丁可打，必须从 Web.config 和 bin/ 目录中移除 Idunno.AntiCsrf，并替换为 System.Web.Helpers.AntiForgery、经 MAC 验证或加密的 ViewState 配合 Page.ViewStateUserKey，或 ASP.NET Core 的 IAntiforgery；同时应审计 IIS 日志中的异常 POST 请求，若发现利用迹象，需轮换 Web.config 和 applicationHost.config 中的 machineKey、加密密钥及数据库凭据，并检查 Web 根目录是否存在未授权文件。
 
-**标签**: `#Windows Server`, `#WoW64`, `#32位兼容性`, `#微软`, `#操作系统`
+**标签**: `#ASP.NET`, `#CSRF`, `#insecure deserialization`, `#CVE`, `#remote code execution`
 
 ---
 
 <a id="item-tech-news-8"></a>
-### [Codex2api 疑遭供应链投毒，3.1.10–3.1.12 需回滚](https://github.com/WormW/codex2api-incident-2026-11) ⭐️ 7.0/10
+### [微软 Azure APIM 漏洞遭利用，客户 API 凭据被窃](https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/) ⭐️ 7.0/10
 
-据 Telegram 频道 zaihuapd 转述的一份事件复盘，开源项目 codex2api 的作者账号遭入侵，攻击者绕过 main 分支直接推送 tag，使 Release 构建出带后门的版本。复盘称 v3.1.11 去掉了鉴权，等同于可无密码远程执行命令；同时有 workflow 将仓库的 16 个 Actions secrets 外传，波及同一账号下至少 21 个仓库。该报告建议装过或升级到 3.1.10–3.1.12 的用户立即停用、回退到 3.1.9，并轮换 GitHub token、SSH key、数据库和 DeepSeek 等相关密钥。以上均来自社交媒体转述与第三方复盘，尚未见到项目方的独立确认。
+微软警告客户，Azure API Management（APIM）Classic 层级中的一个安全漏洞已被利用，攻击者借此窃取客户存储的 API 凭据。挪威当局将该漏洞与针对能源公司的网络攻击联系起来。提供的报道摘录未说明受影响客户数量、具体利用方式或修复指引。
 
-telegram · zaihuapd · 11月23日 11:21
+rss · BleepingComputer · 11月23日 19:42
 
-**「事件背景」** Codex2api 通过 GitHub Release 发布版本，3.1.10–3.1.12 是在 3.1.9 之后出现的更新。事件复盘称，攻击者没有经由 main 分支，而是直接推送 tag，使 Release 构建流程产出了带后门的包；这也是通报要求已安装或更新到这三个版本的用户停用并回退到 3.1.9 的原因。
+**「背景」** Azure API Management 是微软提供的 API 网关与管理服务，企业通过它集中发布、治理并保护 API，因此调用接口所需的凭据也可能存放在该服务中。此次微软确认受影响的是 APIM 的 Classic 层级，并称其中存储的 API 凭据已被窃取。
 
-**「影响」** 对已运行 3.1.10–3.1.12 的部署，报告给出的处置顺序是先停用并回退到 3.1.9，再轮换全部可能暴露的凭据；由于外泄的是 GitHub Actions secrets，同一账号下至少 21 个仓库的 CI 凭据都应视为已泄露，仅回滚版本并不能消除风险。
-
-**标签**: `#supply-chain security`, `#GitHub Actions`, `#security incident`, `#open source`, `#credential rotation`
-
----
-
-<a id="item-tech-news-9"></a>
-### [Meta AI 负责人称超级智能将至并警告控制风险](https://thenextweb.com/news/metas-ai-chief-says-superintelligence-is-arriving-and-control-is-at-risk) ⭐️ 7.0/10
-
-Meta 首席 AI 官、超级智能实验室负责人 Alexandr Wang 在 X 发长文称，超级智能已不再是“未来某天”的议题。他以数学家 Levent Alpöge 借助 Anthropic Claude 完成、并于周六经 Lean 与 Mathlib 社区机器校验的黎曼猜想证明为例，认为 AI 与顶尖人类的差距只剩具体知识、工程整合与实验三块。他警告人类很难继续掌控可无限自我改进、或比自己聪明 1000 倍的系统，呼吁紧急投入安全、对齐与防护研究；该证明目前尚无人类可读版本，来源也未提供独立验证。
-
-telegram · zaihuapd · 11月23日 12:49
-
-**「背景：机器校验与黎曼猜想」** 这里的“机器校验”指证明被写成 Lean 定理证明器可检查的形式化代码，并依赖 Mathlib 数学库；它不同于经过同行评审、人类可读的数学论证。据 Scientific American 和 State of Proof 的报道，Levent Alpöge 称与 Claude 合作得到了黎曼猜想（以及对 Dirichlet L 函数的广义黎曼猜想）的证明并完成 Lean 形式化，Lean/Mathlib 社区随后认证了该形式化结果，但具体检查范围和仍未知的部分需要区分。
-
-**「影响」** 对数学界而言，当前最直接的障碍是缺少人类可读证明：在出现可读版本前，外部研究者难以审查该黎曼猜想证明的具体论证。
+**「受影响客户需按凭据泄露处置」** 在 Azure API Management 经典层中存放过 API 凭据的客户，应将这些凭据视为可能已泄露：微软已确认该漏洞被实际利用来窃取存储的凭据，挪威当局还将此与针对能源公司的网络攻击联系起来。由于目前公开信息未说明受影响的具体层级范围、利用手法和修复指引，在微软给出进一步说明前，先行轮换这些凭据并审查相关 API 的调用记录，是较为直接的应对措施。
 
 <details><summary>参考链接</summary>
 <ul>
-<li><a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/">Anthropic mathematician proves Riemann hypothesis, most ...</a></li>
-<li><a href="https://www.datastudios.org/post/claude-riemann-hypothesis-proof-lean-community-certifies-levent-alpoge">Claude-assisted Riemann hypothesis proof certified by Lean ...</a></li>
-<li><a href="https://stateofproof.org/paper-watch/paper-2026-11-20-a-claimed-proof-of-the-riemann-hypothesis">A Claimed Proof of the Riemann Hypothesis — Paper Watch ...</a></li>
+<li><a href="https://azure.microsoft.com/">Cloud Computing Services | Microsoft Azure</a></li>
 
 </ul>
 </details>
 
-**标签**: `#AI safety`, `#superintelligence`, `#Meta`, `#Lean theorem proving`, `#Riemann hypothesis`
+**标签**: `#Azure`, `#cloud security`, `#API security`, `#credential theft`, `#vulnerability`
+
+---
+
+<a id="item-tech-news-9"></a>
+### [CISA 警告 Cisco Expressway 严重 RCE 漏洞已被在野利用](https://www.bleepingcomputer.com/news/security/cisa-flags-critical-cisco-expressway-rce-flaw-as-actively-exploited/) ⭐️ 7.0/10
+
+CISA 警告美国联邦机构，攻击者已在野利用 Cisco Expressway 的一个严重远程代码执行漏洞，而该漏洞近期刚获得补丁。BleepingComputer 于 2026 年 11 月 23 日报道了这一警告，但未披露漏洞编号、受影响版本、CVSS 评分或具体利用方式。对使用 Cisco Expressway 的管理员来说，目前可确认的事实是该漏洞已遭实际攻击利用，风险不再只是理论上的。
+
+rss · BleepingComputer · 11月23日 07:44
+
+**「背景」** 该漏洞被追踪为 CVE-2026-76466。据 The Hacker News 报道，攻击者利用它取得 root 权限，入侵了某俄罗斯组织内的四台设备，并尝试横向移动；这为 CISA 所说该漏洞已遭在野利用提供了具体案例。
+
+**「受影响范围与处置要点」** 该漏洞仅影响启用集群功能的 Expressway Core 与 Edge（虚拟版和硬件 appliance 版本），攻击者已在真实入侵中利用它取得 root 权限并尝试横向移动。运行集群部署的管理员应尽快升级到 Cisco 于 2026 年 10 月 21 日发布的修复版本，并在无法立即升级时限制对集群数据库服务的访问。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html">Hackers Exploit Critical Cisco Expressway Flaw, Breach Four...</a></li>
+<li><a href="https://www.securityweek.com/hackers-exploit-cisco-expressway-vulnerability-soon-after-poc-release/">Cisco Expressway CVE -2026-76466 Exploitation ... - SecurityWeek</a></li>
+<li><a href="https://thehackernews.com/2026/11/hackers-exploit-critical-cisco.html">Hackers Exploit Critical Cisco Expressway Flaw, Breach Four...</a></li>
+
+</ul>
+</details>
+
+**标签**: `#cybersecurity`, `#Cisco Expressway`, `#RCE`, `#CISA`, `#vulnerability exploitation`
+
+---
+
+<a id="item-tech-news-10"></a>
+### [Codex2api 疑遭供应链投毒，恶意版本移除鉴权](https://github.com/WormW/codex2api-incident-2026-11) ⭐️ 7.0/10
+
+据事件复盘，Codex2api 作者账号被入侵，攻击者绕过 main 分支推送恶意 tag，使 Release 构建出带后门的版本。v3.1.11 移除了鉴权，可导致未认证的远程命令执行；另有 workflow 将仓库的 16 个 GitHub Actions secrets 外传，波及同一账号下至少 21 个仓库。已安装或更新到 3.1.10–3.1.12 的用户被建议立即停用并回退到 3.1.9，同时轮换 GitHub token、SSH key、数据库及 DeepSeek 等相关密钥。上述信息来自 Telegram 汇总的事件复盘，尚未由独立来源验证。
+
+telegram · zaihuapd · 11月23日 11:21
+
+**「背景」** GitHub Actions 的发布任务通常可以读取仓库配置的 Secrets；当 Release 由 tag 推送直接触发时，未合入 main 的代码也可能被打包发布，从而绕过常规的合并审查。安全厂商此前记录的 wfx 攻击同样通过 GitHub Actions 窃取 CI 密钥，并在事后回滚改动、删除运行记录，说明这类发布链风险已有先例。
+
+**「处置影响」** 回退到 3.1.9 只能移除恶意版本，无法消除已外传 secrets 的风险，因此受影响用户需要把轮换范围覆盖到所有可能被该 workflow 读取的 GitHub token、SSH key、数据库和 DeepSeek 密钥。
+
+<details><summary>参考链接</summary>
+<ul>
+<li><a href="https://www.ox.security/blog/thousands-of-github-accounts-hijacked-with-wfx-loot-ci-secret-stealing-malware-via-github-actions-npm/">Thousands Of GitHub Accounts Hijacked With wfx-loot CI Secret ...</a></li>
+<li><a href="https://www.stepsecurity.io/blog/wfx-phantom-the-github-actions-secret-stealer">WFX Phantom: The GitHub Actions Secret Stealer... - StepSecurity</a></li>
+
+</ul>
+</details>
+
+**标签**: `#supply-chain-security`, `#github-actions`, `#security-incident`, `#codex2api`, `#credential-rotation`
 
 ---
 
 ## 科技博客
 
 <a id="item-tech-blog-1"></a>
-### [DoorDash 调度重构：协调与计算分离](https://blog.bytebytego.com/p/doordash-dispatch-building-a-lightning) ⭐️ 6.0/10
+### [.NET 加载回退绕过进程加固](https://projectzero.google/2026/11/virtualbox-process-hardening.html) ⭐️ 9.0/10
 
-rss · ByteByteGo · 11月23日 16:31
+rss · Google Project Zero · 11月23日 08:00
 
-**「背景」** DoorDash 的调度系统要在订单、Dasher 位置、餐厅备餐和交通状况不断变化时，快速给出“足够好”的指派。旧单体引擎把物流状态、业务规则和昂贵的路由优化耦合在一起，核心算法近似二次复杂度；高峰期需求可达其处理能力的近 4 倍，系统只能缩减搜索范围或退化为简单规则。
+**「背景」** 作者延续 2017 年对 VirtualBox Windows 进程加固的研究，2026 年再发现三种受保护进程绕过；其中 CVE-2026-87268 来自.NET Framework 装配加载与 VirtualBox DLL 钩子的交互。
 
-**「方案」** 新平台把调度协调与重计算拆成可独立扩展的两层：协调层维护物流状态、应用业务规则并组织每轮工作，计算层由无状态 worker 并行生成和评估路线、运行优化与模型；协调层通过 gRPC 在每个 dispatch tick 下发局部、自包含的 payload，避免每个 worker 复制全量状态。为缩小问题规模，系统按地理簇和配送轨迹做分层分解，先快速预聚类，再用质心细化，分区并行求解，最后由全局调和与评分层合并局部方案，尽量保留整体优化质量。上线时先做影子测试，复制生产流量、只记录新引擎结果以做行为回归，再用生产 switchback 实验轮换控制、限制暴露并设置回退，逐步扩大范围。DoorDash 报告处理规模达到 10 倍，超过 99.96% 的运行在 20 秒内完成，Super Bowl 流量峰值下可用性高于 99.99%；平台还支持 worker 内 ONNX Runtime 的 L1 本地模型、远程 L2 模型，以及调整优化权重的多智能体强化学习。
+**「方案」** 作者发现.NET 4 的 PEImageLayout::Map 会先用 SEC\_IMAGE 创建映像节，若失败且错误为 ERROR\_BAD\_EXE\_FORMAT，则退回 FlatImageLayout，仅把文件映射为数据节。VirtualBox 的 NtCreateSection 钩子又把 PE 解析器的 VERR\_LDR\_ARCH\_MISMATCH 映射成 STATUS\_INVALID\_IMAGE\_FORMAT；AnyCPU 纯托管程序集恰是含可执行节的 x86 PE，在 64 位主机上触发架构不匹配，于是映像检查被绕过，程序集仍能被.NET 加载。作者再用当前用户注册表的 COM 劫持，让受加固的 VirtualBox 进程加载该程序集并执行代码；VirtualBox 的修复是不再返回该状态码，并禁用 COM 的当前用户 hive 查询。作者还把思路用于系统代码完整性：清除 COFF 头 IMAGE\_FILE\_EXECUTABLE\_IMAGE 这一个比特即可让 NtCreateSection 失败，而.NET 忽略该位；在启用 UMCI 的 Windows 11 S Mode 上，WLDP 检查因标志比较错误未能拦截，劫持 WerSecureFault.exe 的 COM 加载后他获得 TCB 级 PPL 代码执行，PP 则因要求页哈希不可行。该问题公开披露后作为 CVE-2026-108398 在 2026 年 10 月修复，WLDP 检查改为 IS\_ENFORCE，但作者认为 PPL 路径仍可绕过。
 
-**「启示」** 作者认为，这次重构的关键不只是性能数字，而是把调度从单体瓶颈转成可分布、可验证、可扩展的架构，使更快决策与更大搜索空间能够同时成立；但这些结果来自 DoorDash 公开材料，分区边界处调和能恢复多少质量、调和是否成为尾延迟来源，仍未展开。
+**「启示」** 作者的核心结论是，加固实现中错误码映射和策略检查的微小疏漏会被.NET 加载回退放大为完整绕过；而当预期行为不明确时，安全服务标准也可能让真实漏洞未被及时上报。
 
-**标签**: `#dispatch systems`, `#distributed optimization`, `#system architecture`, `#shadow testing`, `#ML serving`
-
----
-
-<a id="item-tech-blog-2"></a>
-### [cuDSS 1.0：稀疏直接求解器的精度与内存改进](https://developer.nvidia.com/blog/accelerating-direct-sparse-solvers-for-computational-engineering-with-nvidia-cudss-1-0/) ⭐️ 6.0/10
-
-rss · NVIDIA CUDA Technical Blog · 11月23日 19:59
-
-**「背景」** 稀疏线性方程组是结构、流体、电路等工程仿真的核心；随着问题规模和精度要求上升，直接求解器既要借 GPU 扩展，又要保持生产级稳健性。cuDSS 已正式可用，1.0 版聚焦真实工作负载的性能、数值精度与显存限制。
-
-**「方案」** 作者报告，在电路、TCAD、热、结构、电磁和流体等基准矩阵上，cuDSS 1.0 相对 Intel MKL 2026.1.0 的几何平均加速为：分析 2.5 倍、数值分解 5.9 倍、三角求解 151 倍（B200 与 Xeon Platinum 8570，NVIDIA 自报；端到端收益取决于各阶段占比）。针对对称不定系统，1.0 默认启用保对称的匹配缩放（HSL MC64）和 Bunch-Kaufman 选主元，允许 1×1 或 2×2 主元，避免小对角元失稳；SuiteSparse 示例中 NRBE 最多改善约 10 个数量级，扰动主元降为零。作者也提醒匹配并非总提升精度，少数情形可用 CUDSS\_MATCHING\_ALG\_NONE 关闭。内存上，混合模式把 GPU HBM 与 CPU DRAM 视作统一容量，将暂不需要的数据放在主机端，使大型 VLSI 算例最低显存需求平均降 30%，原本需多 GPU 的问题可落在单卡；1.0 还引入可定制 pinned memory handler，并称 GPU 符号分解比 0.8.0 快 2.21 倍。
-
-**「启示」** cuDSS 1.0 的核心主张是，GPU 稀疏直接求解器的可用性来自精度算法、分阶段性能与 CPU-GPU 混合内存的系统级协同，而非单一内核加速；不过这些收益仍主要基于 NVIDIA 自家基准，需独立验证。
-
-**标签**: `#GPU sparse solvers`, `#cuDSS`, `#Bunch-Kaufman pivoting`, `#hybrid memory`, `#numerical accuracy`
-
----
-
-<a id="item-tech-blog-3"></a>
-### [Sirius：为 DuckDB 带来 GPU 加速分析](https://developer.nvidia.com/blog/get-started-with-gpu-accelerated-duckdb-analytics-using-the-sirius-core-extension/) ⭐️ 4.0/10
-
-rss · NVIDIA CUDA Technical Blog · 11月23日 17:09
-
-**「背景」** 随着数据集增长，DuckDB 上的分析查询会变慢，影响数据探索、流水线和应用的响应。NVIDIA 与 DuckLabs 合作发布开源 GPU 原生 SQL 引擎 Sirius，并把它做成 DuckDB 核心扩展，目标是无需改写 SQL 或数据库模式就能加速受支持的查询。
-
-**「方案」** Sirius 让 DuckDB 继续负责 SQL 解析与优化，把生成的查询计划整体交给 GPU 执行，再通过同一连接返回结果；遇到不支持的特性则回退到 DuckDB 的 CPU 引擎。入门门槛是 DuckDB 2.0 和兼容驱动的 NVIDIA GPU，操作只有 INSTALL sirius; 与 LOAD sirius; 两条命令；文中用 TPC-H SF0.01 生成 lineitem，执行按 l\_returnflag 分组的求和查询，并明确小数据只用于演示、不用于证明性能。作者给出的 NVIDIA 自测基准覆盖 S3 上的 TPC-H 派生查询、SF100/1K/3K/10K 及固定开发构建：调优后双 GPU 比最佳 CPU 配置快 3.25–5.50 倍，SF1K 从 347.3 秒降至 63.2 秒，SF3K 从 752.4 秒降至 160.6 秒且查询期计算成本约降 71%，SF10K 从 2369.4 秒降至 729.9 秒、成本约降 79%。但计时口径并不对等——Sirius 不含结果获取/导出，DuckDB 含 CSV 输出；SF10K 默认双 GPU 配置未完成，调优后才完成，SF100 则是单 GPU 成本最低、双 GPU 运行最快。
-
-**「启示」** 作者的核心结论是，Sirius 把 GPU 执行嵌入 DuckDB 现有 SQL 工作流，降低了尝试 GPU 加速的门槛；不过这些数字来自厂商自测和特定调优配置，实际收益仍取决于查询结构、数据规模、硬件与缓存条件。
-
-**标签**: `#DuckDB`, `#GPU acceleration`, `#SQL analytics`, `#database extensions`, `#benchmarks`
+**标签**: `#.NET runtime`, `#PE image loading`, `#process hardening`, `#VirtualBox`, `#Windows security`
 
 ---
